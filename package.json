@@ -1,0 +1,32 @@
+{
+  "name": "bare-headers",
+  "version": "1.5.0",
+  "description": "Development headers for Bare",
+  "exports": {
+    ".": "./index.js",
+    "./package": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "include"
+  ],
+  "scripts": {
+    "test": "standard",
+    "prepack": "node scripts/prepack.mjs",
+    "postpack": "node scripts/postpack.mjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/holepunchto/bare-headers.git"
+  },
+  "author": "Holepunch",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/holepunchto/bare-headers/issues"
+  },
+  "homepage": "https://github.com/holepunchto/bare-headers#readme",
+  "devDependencies": {
+    "glob": "^11.0.0",
+    "standard": "^17.0.0"
+  }
+}
