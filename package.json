@@ -3,11 +3,9 @@
   "version": "1.5.0",
   "description": "Development headers for Bare",
   "exports": {
-    ".": "./index.js",
     "./package": "./package.json"
   },
   "files": [
-    "index.js",
     "include"
   ],
   "scripts": {
