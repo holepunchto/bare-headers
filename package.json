@@ -8,10 +8,11 @@
   "files": [
     "include"
   ],
+  "assets": [
+    "include"
+  ],
   "scripts": {
-    "test": "standard",
-    "prepack": "node scripts/prepack.mjs",
-    "postpack": "node scripts/postpack.mjs"
+    "test": "standard"
   },
   "repository": {
     "type": "git",
@@ -24,7 +25,6 @@
   },
   "homepage": "https://github.com/holepunchto/bare-headers#readme",
   "devDependencies": {
-    "glob": "^11.0.0",
-    "standard": "^17.0.0"
+    "cmake-fetch": "^1.1.0"
   }
 }
