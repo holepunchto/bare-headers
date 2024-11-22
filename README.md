@@ -8,7 +8,7 @@ To generate the `include/` directory prior to publishing the headers, do:
 
 ```console
 bare-make generate
-bare-make install
+bare-make install --prefix .
 ```
 
 ## License
