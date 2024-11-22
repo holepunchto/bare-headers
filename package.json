@@ -12,7 +12,7 @@
     "include"
   ],
   "scripts": {
-    "test": "standard"
+    "test": "prettier . --check"
   },
   "repository": {
     "type": "git",
@@ -25,6 +25,8 @@
   },
   "homepage": "https://github.com/holepunchto/bare-headers#readme",
   "devDependencies": {
-    "cmake-fetch": "^1.1.0"
+    "cmake-fetch": "^1.1.0",
+    "prettier": "^3.3.3",
+    "prettier-config-standard": "^7.0.0"
   }
 }
