@@ -7,6 +7,6 @@ project(bare_headers)
 fetch_package("github:holepunchto/bare@1.15.1")
 
 install(
-  DIRECTORY $<TARGET_PROPERTY:bare,INTERFACE_INCLUDE_DIRECTORIES>
+  DIRECTORY $<REMOVE_DUPLICATES:$<TARGET_PROPERTY:bare,INTERFACE_INCLUDE_DIRECTORIES>>
   DESTINATION .
 )
