@@ -1,0 +1,19 @@
+name: Generate
+on:
+  workflow_dispatch:
+jobs:
+  generate:
+    runs-on: ubuntu
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: lts/*
+      - run: npm install -g bare-make
+      - run: npm install
+      - run: bare-make generate
+      - run: bare-make install --prefix .
+      - uses: actions/upload-artifact@v4
+        with:
+          name: include
+          path: include
