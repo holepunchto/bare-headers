@@ -7,8 +7,9 @@ Development headers for Bare.
 To generate the `include/` directory prior to publishing the headers, do:
 
 ```console
-bare-make generate --no-cache
-bare-make install --prefix .
+gh workflow run generate
+gh run watch
+gh run download --name include --dir include
 ```
 
 ## License
