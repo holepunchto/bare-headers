@@ -1,10 +1,10 @@
-cmake_minimum_required(VERSION 3.31)
+cmake_minimum_required(VERSION 4.0)
 
 find_package(cmake-fetch REQUIRED PATHS node_modules/cmake-fetch)
 
 project(bare_headers)
 
-fetch_package("github:holepunchto/bare@1.20.0")
+fetch_package("github:holepunchto/bare@1.23.0")
 
 install(
   DIRECTORY $<REMOVE_DUPLICATES:$<TARGET_PROPERTY:bare,INTERFACE_INCLUDE_DIRECTORIES>>
