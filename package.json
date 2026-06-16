@@ -3,16 +3,19 @@
   "version": "1.27.0",
   "description": "Development headers for Bare",
   "exports": {
-    "./package": "./package.json"
+    "./package": "./package.json",
+    ".": "./index.js"
   },
   "files": [
+    "index.js",
     "include"
   ],
   "assets": [
     "include"
   ],
   "scripts": {
-    "test": "prettier . --check"
+    "format": "prettier --write . && lunte --fix",
+    "lint": "prettier --check . && lunte"
   },
   "repository": {
     "type": "git",
@@ -24,8 +27,13 @@
     "url": "https://github.com/holepunchto/bare-headers/issues"
   },
   "homepage": "https://github.com/holepunchto/bare-headers#readme",
+  "dependencies": {
+    "require-asset": "^1.2.2"
+  },
   "devDependencies": {
+    "brittle": "^4.0.2",
     "cmake-fetch": "^1.1.0",
+    "lunte": "^1.8.0",
     "prettier": "^3.3.3",
     "prettier-config-holepunch": "^2.0.0"
   }
