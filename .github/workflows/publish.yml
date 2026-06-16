@@ -16,5 +16,7 @@ jobs:
       - uses: holepunchto/actions/node-base@v1
       - uses: holepunchto/actions/compile-prebuilds@v1
         with:
+          platform: linux
+          arch: x64
           prefix: .
       - uses: holepunchto/actions/publish@v1
