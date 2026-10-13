@@ -1,6 +1,6 @@
 {
   "name": "bare-headers",
-  "version": "1.33.2",
+  "version": "1.35.0",
   "description": "Development headers for Bare",
   "exports": {
     "./package": "./package.json",
